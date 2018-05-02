@@ -1,0 +1,684 @@
+@font-face {
+    font-family: open-sans-semibold;
+    src: url(font/open-sans-semibold_[allfont.ru].ttf);
+}
+@font-face {
+    font-family: open-sans;
+    src: url(font/open-sans_[allfont.ru].ttf);
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 100%;
+    &__woman {
+        background-image:url(img/woman.png);
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 74.44%;
+    }
+}
+.header {
+    background: #f4f6f9;
+    max-height: 100%;
+
+    &-logo__img {
+        vertical-align: top;
+        width: 19.82%;
+        max-width: 100%;
+        margin-top: 50px;
+    }
+    &-desc {
+        line-height: 1.1;
+        margin-top: 84px;
+        .reporting-service{
+            margin: 0;
+            width: 50%;
+            font-family: open-sans-semibold;
+            font-size: 3.125em;
+            font-weight: 700;
+        }
+        .my-business {
+            margin: 54px 0 0 0;
+            width: 49%;
+            font-family: open-sans;
+            font-size: 1.5em;
+        }
+    }
+    .header-button {
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        color: #ffffff;
+        background-color: #e95a43;
+        width: 25.64%;
+        line-height: 50px;
+        font-family: open-sans;
+        font-size: 1em;
+        border-radius: 10px;
+        margin: 56px 0 100px 0;
+    }
+}
+.wrapper--advantages {
+    display: flex;
+}
+.advantages {
+    background: #3da1c5;
+    display: flex;
+    &-list {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        margin: 0 70px;
+        padding: 118px 0;;
+
+        &__item {
+            width: 33.33%;
+            list-style-type: none;
+            justify-content: center;
+            font-family: open-sans-semibold;
+            font-size: 1.25em;
+            color: #fff;
+        }
+    }
+}
+.service {
+    display: flex;
+
+    &-header {
+        margin: 100px 0;
+        font-family: open-sans-semibold;
+        font-size: 2.25em;
+        text-align: center;
+    }
+    &-list {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        display: flex;
+        margin: 0;
+        padding: 0 0 55px 0;
+
+        &-text {
+            margin: 0;
+            width: 70%;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        &__item {
+            width: 28%;
+            list-style-type: none;
+            justify-content: center;
+            &:nth-child(-n+3) {
+
+                margin-bottom: 80px;
+            }
+
+
+            &-img {
+                padding-right: 5.13%;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+.insurance {
+    background-color: #d1dbe5;
+
+    &-header {
+        margin: 0;
+        padding-top: 93px;
+        text-align: center;
+        font-family: open-sans-semibold;
+        font-size: 2.25em;
+    }
+}
+.alfa-insurance, .polis-insurance {
+    display: inline-block;
+    
+}
+.polis-insurance {
+    width: 27.35%;
+    vertical-align: bottom;
+    padding: 48px 0 21px 0;
+    font-size: 0;
+
+    .polis-img {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+.alfa-insurance {
+    vertical-align: top;
+    padding-top: 120px;
+    width: 31.3%;
+    margin: 0 14.87% 0 14.53%;
+
+    &-img {
+        width: 64.45%;
+        max-width: 100%;
+    }
+
+    .not-error {
+        font-family: open-sans-semibold;
+        font-size: 1.5em;
+    }
+    .my-insurance {
+        font-family: open-sans;
+        font-size: 1.5em;
+        width: 100%;
+    }
+}
+.reports {
+    display: flex;
+
+    &-header {
+        text-align: center;
+        font-family: open-sans-semibold;
+        font-size: 2.25em;
+        width: 65%;  
+        margin: 100px auto 86px auto;
+    }
+    &-list {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        &__item {
+            display: flex;
+            width: 43.931%;
+            padding: 36px 27px;
+            margin-bottom: 29px;
+            justify-content: space-between;
+            font-size: 1.25em;
+            font-family: open-sans;
+            color: #333333;
+            border: 1px #d1dbe5 solid;
+            border-radius: 10px;
+
+            .button-item {
+                text-align: center;
+                text-decoration: none;
+                justify-content: space-around;
+                border: #3da1c5 1px solid;
+                width: 33.07%;
+                line-height: 40px;
+                border-radius: 5px;
+                color: #3da1c5;
+                background: #fff;
+                font-family: open-sans;
+                font-size: 1em;
+                margin-right: 8px;
+
+                &:hover {
+                    background: #3da1c5;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.banks-header {
+    font-family: open-sans-semibold;
+    font-size: 2.25em;
+    text-align: center;
+    margin-top: 199px;
+
+    &__text {
+        font-family: open-sans-semibold;
+        font-size: 1.5em;
+        text-align: center;
+        margin: 0 0 80px 0;
+    }
+}
+.banks-list {
+    flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+    display: flex;
+    padding: 0;
+    
+    &__item {
+        width: 23.07%;
+        padding: 26px 0;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border: 1px #eef1f6 solid;
+        margin-bottom: 30px;
+    }
+    &__card {
+        width: 100%;
+    }
+}
+.banks-img {
+    padding: 0 16.17%;
+    width: 67.5%;
+    max-width: 100%;
+}
+.banks-footer {
+    width: 40%;
+    font-family: open-sans;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 50px auto 100px auto;
+}
+.emoney {
+    background: #e4e9f0;
+
+    &__header {
+        font-family: open-sans-semibold;
+        font-size: 2.25em;
+        text-align: center;
+        width: 80%;
+        padding-top: 100px;
+        margin: 0 auto 87px auto;
+    }
+
+    &__list {
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0;
+        margin: 0 0 90px 0;
+    }
+
+    &__item {
+        width: 14.53%;
+        height: 130px;
+        background: #fff;
+        border-radius: 10px;
+        list-style-type: none;
+        margin: 0 0 30px 2.56%;
+
+        &:nth-child(6n+1) {
+            margin: 0;
+        }
+    }
+
+    &__card {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items : flex-end;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    &-link {
+        padding-left: 20px;
+        text-decoration: none;
+        width: 100%;
+        line-height: 40px;
+        border: 0;
+        border-top : 1px solid #eef1f6;
+        background: #fff;
+        color: #3da1c5;
+
+        &:hover {
+            background: #eef1f6;
+        }
+    }
+
+    &-view {
+        width: 76.47%;
+        max-width: 100%;
+    }
+
+    &__footer {
+        font-size: 1.5em;
+        font-family: open-sans;
+        color: #333333;
+        text-align: center;
+        margin: 0;
+        padding-bottom: 106px;
+    }
+}
+.business {
+    background-image: url(img/background-business.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__header {
+        font-family: open-sans-semibold;
+        font-size: 2.25em;
+        text-align: center;
+        color: #fff;
+        margin: 0 0 60px 0;
+        padding-top: 84px;
+        
+    }
+
+    &-free {
+        font-family: open-sans;
+        font-size: 1.5em;
+        text-align: center;
+        color: #fff;
+        margin: 0 0 64px 0;
+    }
+
+    &-form {
+        padding-bottom: 100px;
+    }
+
+    &-button {
+        text-decoration: none;
+        text-align: center;
+        width: 25.64%;
+        line-height: 50px;
+        display: block;
+        margin: 0 auto;
+        background: #e95a43;
+        color: #fff;
+        border-radius: 5px;
+        font-family: open-sans;
+        font-size: 1em;
+        border: #e95a43;
+    }
+}
+.footer-menu {
+    height: 140px;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+}
+.phone, .call-me, .social, .about-us {
+    display: inline-block;
+    vertical-align: middle;
+}
+.phone {
+    margin-right: 7.4%;
+}
+.number-phone {
+    font-family: open-sans;
+    font-size: 1.75em;
+    color: #333;
+    margin: 0;
+}
+.number-free {
+    font-family: open-sans;
+    font-size: 1em;
+    color: #333;
+    margin: 0;
+}
+.call-me {
+    width: 15%;
+    margin-right: 6.5%;
+}
+.back-call {
+    display: inline-block;
+    margin: 0;
+    vertical-align: super;
+}
+.call-img {
+    border: 1px solid #474748;
+    border-radius: 50%;
+    padding: 10px;
+    
+}
+.social {
+    margin-right: 17%;
+}
+.about-us {
+    width: 28%;
+}
+.footer__about {
+    font-family: open-sans;
+    font-size: 0.75em;
+    color: #6e6f70;
+    margin: 0;
+}
+
+
+/* The media queries*/
+@media screen and (max-width: 1024px) {
+    .header-desc .reporting-service {
+        font-size: 2.5em;
+    }
+    .header .header-button{
+        font-size: 0.75em;
+    }
+    .reports-list__item {
+        font-size: 1em;
+        width: 70%;
+        margin: 0 auto 30px auto;
+    }
+    .business-button {
+        font-size: 0.75em;
+    }
+    .number-phone {
+        font-size: 1.25em;
+    }
+    .call-me {
+        width: 15%;
+    }
+    .social {
+        margin-right: 10%;
+    }
+}
+@media screen and (max-width: 768px) {
+
+    .wrapper__woman {
+        background-size: 66%;
+        }
+    .header-logo__img {
+        margin-top: 20px;
+    }
+    .header-desc {
+        margin-top: 20px;
+        .my-business {
+            font-size: 1em;
+            margin: 20px 0;
+        }
+    }
+    .header-desc .reporting-service {
+        font-size: 1.5em;
+    }
+    .header .header-button{
+        width: 40%;
+        margin: 20px 0 40px 0
+    }
+    .advantages-list__item {
+        font-size: 1em;
+    }
+    .reports-header {
+        font-size: 2em;
+    }
+    .reports-list__item {
+        width: 70%;
+        margin: 0 auto 30px auto;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .reports-list__item .button-item {
+        width: 40%;
+    }
+    .banks-header {
+        margin-top: 99px;
+    }
+    .banks-list__item {
+        margin-bottom: 20px;
+    }
+    .banks-footer {
+        width: 60%;
+    }
+    .emoney__item {
+        width: 14.53%;
+        height: 80px;
+        margin: 0 0 20px 2.56%;
+    }
+    .emoney-link {
+        width: 100%;
+        height: 30px;
+        font-size: 0.75em;
+    }
+    .business-button {
+        width: 30%;
+    }
+    .phone, .call-me, .social {
+        margin-right: 4%;
+    }
+    .call-me {
+        width: 12%;
+    }
+    .about-us {
+        width: 35%;
+    }
+    .number-phone {
+        font-size: 0.75em;
+    }
+    .number-free {
+        font-size: 0.75em;
+    }
+}
+@media screen and (max-width: 479px) {
+    // .wrapper__woman {
+    //     background-size: 85%;
+    // }
+    .header-logo__img {
+        margin-top: 10px;
+    }
+    .header-desc {
+        margin-top: 10px;
+        .my-business {
+            font-size: 1em;
+            margin: 20px 0 0 0;
+        }
+    }
+    .header-desc .reporting-service {
+        font-size: 1.5em;
+    }
+    .header .header-button{
+        width: 35%;
+        margin: 20px 0 20px 0
+    }
+    .advantages-list {
+        margin: 0;
+        padding: 20px 0;
+    }
+    .advantages-list__item {
+        font-size: 1em;
+    }
+    .service-header {
+        margin: 20px 0;
+        font-size: 1.25em;
+    }
+    .service-list__item:nth-child(-n+3) {
+        margin-bottom: 30px;
+    }
+    .service-list {
+        padding: 0 0 30px 0;
+    }
+    .insurance-header {
+        padding-top: 20px;
+        font-size: 1.25em;
+    }
+    .alfa-insurance {
+        padding-top: 20px;
+        width: 50%;
+        margin: 0 14.87% 0 0;
+        .not-error {
+            font-size: 1em;
+        }
+        .my-insurance {
+            font-size: 1em;
+            width: 100%;
+        }
+    }
+    .reports-header {
+        text-align: center;
+        font-family: open-sans-semibold;
+        font-size: 1.25em;
+        width: 65%;
+        margin: 20px auto 20px auto;
+    }
+    .reports-list__item {
+        width: 100%;
+    }
+    .banks-header {
+        font-size: 1.25em;
+        margin-top: 20px;
+
+        &__text {
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+    }
+    .banks-list__item {
+        height: 55px;
+        margin-bottom: 20px;
+    }
+    .banks-footer {
+        width: 100%;
+        font-size: 1.25em;
+        margin: 20px auto;
+    }
+    .emoney__header {
+        font-size: 1.25em;
+        width: 100%;
+        padding-top: 20px;
+        margin: 0 auto 20px auto;
+    }
+    .emoney__list {
+        margin: 0 0 20px 0;
+    }
+    .emoney__item {
+        width: 14.53%;
+        height: 65px;
+        margin: 0 0 20px 2.56%;
+    }
+    .emoney-link {
+        width: 100%;
+        height: 30px;
+        font-size: 0.75em;
+    }
+    .emoney__footer {
+        padding-bottom: 20px;
+    }
+    .business__header {
+        font-size: 1.25em;
+        margin: 0 0 20px 0;
+        padding-top: 30px;
+    }
+    .business-free {
+        font-size: 1em;
+        margin: 0 0 20px 0;
+    }
+    .business-button {
+        width: 60%;
+    }
+    .business-form {
+        padding-bottom: 20px;
+    }
+    .phone, .call-me, .social {
+        margin-right: 2%;
+    }
+    .number-phone {
+        font-size: 0.75em;
+    }
+    .number-free {
+        font-size: 0.75em;
+    }
+    .call-me {
+        width: 15%;
+    }
+    .about-us {
+        width: 40%;
+    }
+}
